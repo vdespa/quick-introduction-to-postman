@@ -25,6 +25,9 @@ The API is available at `https://simple-tool-rental-api.glitch.me`
 
 Returns the status of the API.
 
+- `UP` indicates that the API is running as expected.
+- `DOWN` indicates that the API is currently not working. 
+
 ## Tools ##
 
 ### Get all tools ###
