@@ -2,9 +2,7 @@
 
  # 👋 Introduction to Postman course
 
-Hello and welcome to this free course on writing API tests with Postman. 
-
-[![Watch the video on freeCodeCamp](https://img.youtube.com/vi/VywxIQ2ZXw4/maxresdefault.jpg)](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
+Hello and welcome to this course on writing API tests with Postman. 
 
 ## Important links
 
