@@ -38,11 +38,11 @@ Returns a list of tools from the inventory.
 
 **Parameters**
 
-| Name       | Type    | In    | Description                                                                                                                                          |
-|------------|---------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `category` | string  | query | Optional - Specifies the category of tools you want to be returned. It can be one of: ladders, plumbing, power-tools, trailers, electric-generators. |
-| `results`  | integer | query | Optional - Specifies the number of results you want. Must be number between 1 and 20. By default, only 20 tools will be displayed.                   |                                                               |
-| `available`| boolean | query | Optional - Specifies the availability of the tools. By default, all tools will be displayed.                                                         |
+| Name       | Type    | In    | Description                                                                                                                                                     |
+|------------|---------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `category` | string  | query | Optional - Specifies the category of tools you want to be returned. It can be one of: ladders, plumbing, power-tools, trailers, electric-generators, lawn-care. |
+| `results`  | integer | query | Optional - Specifies the number of results you want. Must be number between 1 and 20. By default, only 20 tools will be displayed.                              |                                                               |
+| `available`| boolean | query | Optional - Specifies the availability of the tools. By default, all tools will be displayed.                                                                    |
 
 
 **Status codes**
