@@ -8,7 +8,7 @@ The API is available at `https://simple-tool-rental-api.glitch.me`
 
 - [Status](Status)
 - [Tools](Tools)
-  - [Get all tools](Get-all-tools)
+  - [Get all tools](#Get-all-tools)
   - [Get a single tool](Get-a-single-tool)
 - [Orders](Orders)
   - [Get all orders](Get-all-orders)
