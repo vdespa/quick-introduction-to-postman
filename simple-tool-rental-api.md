@@ -41,8 +41,8 @@ Returns a list of tools from the inventory.
 | Name       | Type    | In    | Description                                                                                                                                          |
 |------------|---------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `category` | string  | query | Optional - Specifies the category of tools you want to be returned. It can be one of: ladders, plumbing, power-tools, trailers, electric-generators. |
-| `results`  | integer | query | Optional - Specifies the number of results you want. Must be number between 1 and 20.                                                                |
-| `available`| boolean | query | Optional - Specifies the availability of the tools. By default, all tools will be displayed                                                          |
+| `results`  | integer | query | Optional - Specifies the number of results you want. Must be number between 1 and 20. By default, only 20 tools will be displayed.                   |                                                               |
+| `available`| boolean | query | Optional - Specifies the availability of the tools. By default, all tools will be displayed.                                                         |
 
 
 **Status codes**
@@ -124,10 +124,10 @@ Returns a single order.
 
 | Name            | Type    | In     | Description                                   |
 |-----------------|---------|--------|-----------------------------------------------|
+| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 | `toolId`        | integer | body   | Specifies the tool id.                        |
 | `customerName`  | string  | body   | Specifies the name of the customer.           |
 | `comment`       | string  | body   | Optional. Specifies a comment.                |
-| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 
 **Status codes**
 
@@ -154,9 +154,9 @@ Example request body:
 
 | Name            | Type    | In     | Description                                   |
 |-----------------|---------|--------|-----------------------------------------------|
+| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 | `customerName`  | string  | body   | Optional. Specifies the name of the customer. |
 | `comment`       | string  | body   | Optional. Specifies a comment.                |
-| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 
 
 **Status codes**
@@ -184,8 +184,9 @@ Example request body:
 
 | Name            | Type    | In     | Description                                   |
 |-----------------|---------|--------|-----------------------------------------------|
-| `orderId`       | string  | path   | Specifies the order id.                       |
 | `Authorization` | string  | header | Specifies the bearer token of the API client. |
+| `orderId`       | string  | path   | Specifies the order id.                       |
+
 
 
 **Status codes**
