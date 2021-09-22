@@ -6,18 +6,18 @@ The API is available at `https://simple-tool-rental-api.glitch.me`
 
 ## Endpoints ##
 
-- [Status](Status)
-- [Tools](Tools)
+- [Status](#Status)
+- [Tools](#Tools)
   - [Get all tools](#Get-all-tools)
-  - [Get a single tool](Get-a-single-tool)
-- [Orders](Orders)
-  - [Get all orders](Get-all-orders)
-  - [Get a single order](Get-a-single-order)
-  - [Create a new order](Create-a-new-order)
-  - [Update an order](Update-an-order)
-  - [Delete an order](Delete-an-order)
-- [API Authentication](API-Authentication)
-  - [Register a new API client](Register-a-new-API-client)
+  - [Get a single tool](#Get-a-single-tool)
+- [Orders](#Orders)
+  - [Get all orders](#Get-all-orders)
+  - [Get a single order](#Get-a-single-order)
+  - [Create a new order](#Create-a-new-order)
+  - [Update an order](#Update-an-order)
+  - [Delete an order](#Delete-an-order)
+- [API Authentication](#API-Authentication)
+  - [Register a new API client](#Register-a-new-API-client)
 
 ## Status ##
 
