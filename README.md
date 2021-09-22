@@ -1,7 +1,5 @@
 # Quick Introduction to Postman
 
- # 👋 Introduction to Postman course
-
 Hello and welcome to this course on writing API tests with Postman. 
 
 ## Important links
