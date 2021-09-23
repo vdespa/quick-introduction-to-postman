@@ -198,14 +198,6 @@ Example request body:
 | 401 Unauthorized | Indicates that request has not been authenticated. Check the response body for additional details.  |
 | 404 Not found    | Indicates that there is no order with the specified id associated to the API client.                |
 
-Example request body:
-
- ```
-{
-  "customerName": "Joe Doe"
-}
-```
-
 
 ## API Authentication ##
 
