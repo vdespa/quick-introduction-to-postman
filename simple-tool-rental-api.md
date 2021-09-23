@@ -133,7 +133,7 @@ Returns a single order.
 
 | Status code      | Description                                                                                         |
 |------------------|-----------------------------------------------------------------------------------------------------|
-| 201 Created      | Indicates that the client has been registered successfully.                                         |
+| 201 Created      | Indicates that the order has been created successfully.                                             |
 | 400 Bad Request  | Indicates that the parameters provided are invalid.                                                 |
 | 401 Unauthorized | Indicates that request has not been authenticated. Check the response body for additional details.  |
 
