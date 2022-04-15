@@ -4,9 +4,7 @@ Hello and welcome to this course on writing API tests with Postman.
 
 ## Important links
 
-* [📝 Course notes](./course-notes.md)
 * [📚 Simple Tools Rental API documentation](./simple-tool-rental-api.md)
-* [💬 Join the Discord Group for help](https://discord.gg/EEEct8sgYM)
 
 ## Get in touch
 
