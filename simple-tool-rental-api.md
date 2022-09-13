@@ -90,7 +90,7 @@ Returns all orders created by the API client.
 
 | Status code      | Description                                                                                         |
 |------------------|-----------------------------------------------------------------------------------------------------|
-| 200 Created      | Indicates a successful response.                                                                    |
+| 200 OK           | Indicates a successful response.                                                                    |
 | 401 Unauthorized | Indicates that request has not been authenticated. Check the response body for additional details.  |
 
 
@@ -111,7 +111,7 @@ Returns a single order.
 
 | Status code      | Description                                                                                         |
 |------------------|-----------------------------------------------------------------------------------------------------|
-| 200 Created      | Indicates a successful response.                                                                    |
+| 200 OK           | Indicates a successful response.                                                                    |
 | 401 Unauthorized | Indicates that request has not been authenticated. Check the response body for additional details.  |
 | 404 Not found    | Indicates that there is no order with the specified id associated with the API client.              |
 
@@ -221,6 +221,8 @@ The request body needs to be in JSON format.
 |--------------|--------|------|------------------------------------------------|
 | `clientName` | string | body | Specifies the name of the API client.          |
 | `clientEmail`| string | body | Specifies the email address of the API client. |
+
+Note: You don't need to provide a real email address. 
 
 
 **Status codes**
