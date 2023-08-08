@@ -104,8 +104,9 @@ Returns a single order.
 
 | Name            | Type    | In     | Description                                   |
 |-----------------|---------|--------|-----------------------------------------------|
-| `Authorization` | string  | header | Specifies the bearer token of the API client. |
+| `orderId`       | string  | path   | Specifies the order id.                       |
 | `invoice`       | boolean | query  | Optional - Shows the PDF invoice              |
+| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 
 **Status codes**
 
@@ -154,9 +155,10 @@ Example request body:
 
 | Name            | Type    | In     | Description                                   |
 |-----------------|---------|--------|-----------------------------------------------|
-| `Authorization` | string  | header | Specifies the bearer token of the API client. |
+| `orderId`       | string  | path   | Specifies the order id.                       |
 | `customerName`  | string  | body   | Optional. Specifies the name of the customer. |
 | `comment`       | string  | body   | Optional. Specifies a comment.                |
+| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 
 
 **Status codes**
@@ -184,9 +186,8 @@ Example request body:
 
 | Name            | Type    | In     | Description                                   |
 |-----------------|---------|--------|-----------------------------------------------|
-| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 | `orderId`       | string  | path   | Specifies the order id.                       |
-
+| `Authorization` | string  | header | Specifies the bearer token of the API client. |
 
 
 **Status codes**
