@@ -1,8 +1,8 @@
 # Simple Tool Rental API #
 
-This API allows you to reserve a tool. 
+This API allows you to reserve a tool. This is an API for learning and testing purposes. Do not provide any personal information. 
 
-The API is available at `https://simple-tool-rental-api.glitch.me`
+The API is available at `[https://simple-tool-rental-api.glitch.me](https://simple-tool-rental-api.click/)`
 
 ## Endpoints ##
 
@@ -227,18 +227,18 @@ Note: You don't need to provide a real email address.
 
 
 **Status codes**
-| Status code     | Description                                                                       |
-|-----------------|-----------------------------------------------------------------------------------|
-| 201 Created     | Indicates that the client has been registered successfully.                       |
-| 400 Bad Request | Indicates that the parameters provided are invalid.                               |
-| 409 Conflict    | Indicates that an API client has already been registered with this email address. |
+| Status code     | Description                                                                                             |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+| 201 Created     | Indicates that the client has been registered successfully.                                             |
+| 400 Bad Request | Indicates that the parameters provided are invalid.                                                     |
+| 409 Conflict    | Indicates that an API client has already been registered with this email address. Use a different email |
 
 
 Example request body:
 
  ```
  {
-    "clientName": "Postman",
+    "clientName": "Postman App",
     "clientEmail": "valentin@example.com"
 }
  ```
