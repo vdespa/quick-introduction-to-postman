@@ -2,7 +2,7 @@
 
 This API allows you to reserve a tool. This is an API for learning and testing purposes. Do not provide any personal information. 
 
-The API is available at `[https://simple-tool-rental-api.glitch.me](https://simple-tool-rental-api.click/)`
+The API is available at `https://simple-tool-rental-api.click/`
 
 ## Endpoints ##
 
