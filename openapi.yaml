@@ -1,0 +1,154 @@
+openapi: 3.0.0
+info:
+  title: Tool Rental API
+  version: 1.0.0
+  description: ''
+servers:
+  - url: https://simple-tool-rental-api.click
+paths:
+  /status:
+    get:
+      summary: Status
+      responses:
+        '200':
+          description: Successful response
+  /tools:
+    get:
+      summary: Get all tools
+      parameters:
+        - name: available
+          in: query
+          schema:
+            type: boolean
+        - name: category
+          in: query
+          description: Specifies the category of tools you want to be returned.
+          schema:
+            type: string
+            enum:
+              - ladders
+              - plumbing
+              - power-tools
+              - trailers
+              - electric-generators
+              - lawn-care
+        - name: results
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 20
+      responses:
+        '200':
+          description: Successful response
+  /tools/{toolId}:
+    get:
+      summary: Get single tool
+      parameters:
+        - name: user-manual
+          in: query
+          schema:
+            type: boolean
+          example: 'true'
+      responses:
+        '200':
+          description: Successful response
+    parameters:
+      - name: toolId
+        in: path
+        required: true
+        schema:
+          type: integer
+        example: '6483'
+  /api-clients:
+    post:
+      summary: Register API Client
+      responses:
+        '200':
+          description: Successful response
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                clientName:
+                  type: string
+                clientEmail:
+                  type: string
+                  format: email
+            example:
+              clientName: Postman
+              clientEmail: valentin@example.com
+  /orders:
+    post:
+      summary: Create order
+      responses:
+        '200':
+          description: Successful response
+      security:
+        - BearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                toolId:
+                  type: integer
+                customerName:
+                  type: string
+            example:
+              toolId: 4643
+              customerName: '{{$randomFullName}}'
+    get:
+      summary: Get all orders
+      responses:
+        '200':
+          description: Successful response
+      security:
+        - BearerAuth: []
+  /orders/{orderId}:
+    get:
+      summary: Get single order
+      responses:
+        '200':
+          description: Successful response
+      security:
+        - BearerAuth: []
+    parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+        example: U7RTbuaZsHEBhmit5H1yR
+    patch:
+      summary: Update order
+      responses:
+        '200':
+          description: Successful response
+      security:
+        - BearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+            example: |-
+              {
+                  "customerName": "Joe "{{$randomLastName}}"",
+                  "comment": "Pick-up after 4pm."
+              }
+    delete:
+      summary: Delete order
+      responses:
+        '200':
+          description: Successful response
+      security:
+        - BearerAuth: []
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
